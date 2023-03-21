@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700$display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sono', sans-serif, 'Poppins';
+    text-align: center;
+    background-color: #262831;
+}
+
+#mySidenav a {
+    text-decoration: none; /* Remove underline */
+    font-size: 15px; /* Increase font size */
+    color: white; /* Black text color */
+    text-align: center;
+    padding: 15px;
+    transition: 0.3s;
+  }
+
+  #mySidenav a:hover {
+    text-decoration-line: underline; /* On mouse-over, make the elements appear as they should */
+  }
+
+  #ctct-icons{
+    text-align: right;
+    padding: 10px;
+    color: white;
+  }
+
+ .vl{
+  border: 2px solid white;
+  margin-left: 500px;
+  height: 100px;
+  width: 500px;
+  margin-top: 45px;
+  background-color: red;
+ 
+ }
+
+ .h2-vl{
+  margin-top: 21px;
+  font-size: 45px;
+  color: white;
+  background: green;
+  
+  
+  
+ }
+

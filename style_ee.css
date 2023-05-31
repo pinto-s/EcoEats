@@ -1,12 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700$display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Nunito+Sans:wght@200&display=swap');
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
     box-sizing: border-box;
-    font-family: 'Sono', sans-serif, 'Poppins';
     text-align: center;
-    background-color: #262831;
+}
+
+body{
+  background-repeat: none;
+  background-image: linear-gradient(to right, #787750, #8a614b);
 }
 
 #mySidenav a {
@@ -16,6 +19,7 @@
     text-align: center;
     padding: 15px;
     transition: 0.3s;
+    font-weight: bold;
   }
 
   #mySidenav a:hover {
@@ -28,23 +32,39 @@
     color: white;
   }
 
+  .fa-brands{
+    color: white;
+  }
+
  .vl{
   border: 2px solid white;
   margin-left: 500px;
   height: 100px;
   width: 500px;
-  margin-top: 45px;
-  background-color: red;
+  margin-top: 30px;
  
  }
 
  .h2-vl{
-  margin-top: 21px;
+  font-weight: normal;
+  font-family: 'Darumadrop One', sans-serif;
+  margin-top: 10px;
   font-size: 45px;
   color: white;
-  background: green;
-  
-  
-  
  }
+
+ #logo{
+  width: 6%;
+  padding-bottom: 4px;
+ }
+
+ p{
+  color: white;
+  font-size: 20px;
+  margin-right: 100px;
+  margin-left: 100px;
+ }
+ 
+
+
 

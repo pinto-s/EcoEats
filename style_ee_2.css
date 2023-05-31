@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Sono:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+h1{
+    font-weight: lighter;
+    font-size: 200px;
+    padding-top: 10%;
+}
+
+.vl{
+    border-left: 1px solid brown;
+    height: 830px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    float: right;
+}
+
+#face{
+    margin-top: 200%;
+    color: black;
+    text-align: right;
+    float: right;
+    padding: 40px;
+  }
+
+  #email{
+  font-size: 25px;
+  margin-top: 30px;
+  }
+
+  #insta{
+    
+  }
+
+  .fa-brands{
+    color: black;
+    font-size: 30px;
+  }
+
+ 

@@ -7,7 +7,7 @@
     text-align: center;
 }
 
-body{
+.back-g{
   background-repeat: none;
   background-image: linear-gradient(to right, #787750, #8a614b);
 }
@@ -45,7 +45,7 @@ body{
  
  }
 
- .h2-vl{
+ .h2-box{
   font-weight: normal;
   font-family: 'Darumadrop One', sans-serif;
   margin-top: 10px;
@@ -58,13 +58,43 @@ body{
   padding-bottom: 4px;
  }
 
- p{
-  color: white;
-  font-size: 20px;
-  margin-right: 100px;
-  margin-left: 100px;
+
+
+
+ /* Menu Page */
+
+ hr{
+  width: 90%;
+  margin-left: 80px; 
  }
+
  
+ #menupg{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: 'Nunito Sans', sans-serif;
+  background-image: linear-gradient(to right, #787750, #8a614b);
+}
+
+.wrapper{
+  width: 95%;
+  margin: 0 auto;
+}
+
+#search-container{
+  margin: 1em 0;
+}
+
+#search-container input{
+  background-color: transparent;
+  width: 40%;
+  border: transparent;
+  border-bottom: 2px solid;
+}
+
 
 
 

@@ -5,28 +5,58 @@ let products = {
     data: [
     {
         productName: "Basil Pesto Spoons, 4-Pack Cutlery",
-        category: "Basil Pesto" + "4-Pack" + "Spoons",
+        category: "Spoons",
         price: "3",
         image: "no_image_filler.jpg",
     },
     {
         productName: "Basil Pesto Forks, 4-Pack Cutlery",
-        category: "Cocoa" + "4-Pack" + "Forks",
+        category: "Forks",
         price: "3",
         image: "no_image_filler.jpg",  
     },
     {
         productName: "Cocoa Spoons, 4-Pack Cutlery",
-        category: "Cocoa" + "4-Pack" + "Spoons",
+        category: "Spoons",
         price: "3",
         image: "no_image_filler.jpg",  
     },
     {
         productName: "Cocoa Forks, 4-Pack Cutlery",
-        category: "Cocoa" + "4-Pack" + "Forks",
+        category: "Forks",
         price: "3",
         image: "no_image_filler.jpg",  
-    }  
+    },
+    {
+        productName: "Sesame Spoons, 4-Pack Cutlery",
+        category: "Spoons",
+        price: "3",
+        image: "no_image_filler.jpg",  
+    },
+    {
+        productName: "Sesame Forks, 4-Pack Cutlery",
+        category: "Forks",
+        price: "3",
+        image: "no_image_filler.jpg",  
+    },
+    {
+        productName: "Cocoa Spoons and Forks, 4-Pack (mixed 2ea) Cutlery",
+        category: "Combined",
+        price: "3",
+        image: "no_image_filler.jpg",  
+    },
+    {
+        productName: "Basil Spoons and Forks, 4-Pack (mixed 2ea) Cutlery",
+        category: "Combined",
+        price: "3",
+        image: "no_image_filler.jpg",  
+    },
+    {
+        productName: "Sesame Spoons and Forks, 4-Pack (mixed 2ea) Cutlery",
+        category: "Combined",
+        price: "3",
+        image: "no_image_filler.jpg",  
+    }    
 ],
 };
 
@@ -41,6 +71,7 @@ for(let i of products.data){
     imgContainer.classList.add("image-container");
     //img tag
     let image = document.createElement("img");
+    image.classList.add("tip");
     image.setAttribute("src", i.image);
     imgContainer.appendChild(image);
     card.appendChild(imgContainer);
@@ -76,25 +107,27 @@ buttons.forEach(button => {
     }
 });
 
-//select all cards
+//select all cards 
 let elements = document.querySelectorAll(".card");
 //loop through all cards
-elements.forEach((element) => {
-    //display all cards on the 'all' button click
-    if (value == "all"){
-        element.classList.remove("hide"); 
-    }else{
-        //check if element contains category class
-        if(element.classList.contains(value)){
+elements.forEach(element => {
+    //display all cards on 'all' button click
+    if(value == "all"){
+        element.classList.remove("hide");
+    }
+    else{
+    //check if element contains category class
+    if(element.classList.contains(value)){
             //display element based on category
             element.classList.remove("hide");
-        }else{
+        } else {
             //hide other elements
             element.classList.add("hide");
         }
     }
-
 });
+
+
 }
 
 //Search button click
@@ -105,11 +138,74 @@ document.getElementById("search").addEventListener("click", () => {
     let cards = document.querySelectorAll(".card");
     console.log(searchInput);  
 
+    //loop through all elements
+    elements.forEach((element, index) => {
+        //check if text includes the search value
+        if(element.innerText.includes(searchInput.toLowerCase())){
+            //display matching card
+            cards[index].classList.remove("hide");
+        }else{
+            //hide other cards
+            cards[index].classList.add("hide");
+        }
+        
+    })
+
 });
+
+
 
 //Intially display all products
 window.onload = () => {
     filterProduct("all");
 };
+
+
+
+//faceFunction
+
+function faceFunction(){
+    Swal.fire({
+        title: 'Are you sure you would like to change pages?',
+        text: "You will be taken to https://www.facebook.com/ecoeats.nz/",
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes'
+      }).then((result) => {
+        if (result.isConfirmed) {
+      location.replace("https://www.facebook.com/ecoeats.nz/")
+        }
+      })
+
+    }
+
+    //instaFunction
+
+function instaFunction(){
+    Swal.fire({
+        title: 'Are you sure you would like to change pages?',
+        text: "You will be taken to https://www.instagram.com/ecoeats.nz",
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes'
+      }).then((result) => {
+        if (result.isConfirmed) {
+      location.replace("https://www.instagram.com/ecoeats.nz")
+        }
+      })
+
+    }
+
+
+
+
+
+
+
+
 
 

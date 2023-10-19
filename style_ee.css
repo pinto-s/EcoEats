@@ -4,18 +4,22 @@
     padding: 0;
     font-family: 'Nunito Sans', sans-serif;
     box-sizing: border-box;
-    text-align: center;
+
 }
+
+
 
 .back-g{
   background-repeat: none;
-  background-image: linear-gradient(to right, #787750, #8a614b);
+  background-image: url(ecoeats\ leafy\ bg-03.png);
+  background-size: contain;
+  text-align: center;
 }
 
-#mySidenav a {
+  #mySidenav a {
     text-decoration: none; /* Remove underline */
-    font-size: 15px; /* Increase font size */
-    color: white; /* Black text color */
+    font-size: 18px; /* Increase font size */
+    color: #733E19; /* Brown text color */
     text-align: center;
     padding: 15px;
     transition: 0.3s;
@@ -32,51 +36,114 @@
     color: white;
   }
 
+  .footer{
+    /*background-image: linear-gradient(to right, #787750 35%, #8a614b);*/
+    background-color: #656d4a;
+    position: fixed; /* making the footer sticky */
+    left: 0; /* making the footer sticky to side of the webpage*/
+    bottom: 0; /* making the footer sticky to the botoom of the webpage*/
+    width: 92%; /* making the footer span the whole webpage */
+    margin-left: 4%;
+    color: white;
+    text-align: right;
+    padding: 10px;
+  }
+  
+
   .fa-brands{
     color: white;
   }
 
  .vl{
-  border: 2px solid white;
-  margin-left: 500px;
+  border: 2px solid #733E19;
+  /*margin-left: 500px;*/
+  margin-left: 30%;
   height: 100px;
-  width: 500px;
-  margin-top: 3px;
+  /*width: 500px;*/
+  max-width: 40%;
+  margin-top: 10px;
+  text-align: center;
  }
 
  .h2-box{
   font-weight: normal;
+  text-align: center;
   font-family: 'Darumadrop One', sans-serif;
   margin-top: 10px;
   font-size: 45px;
-  color: white;
+  color: #733E19;
  }
 
  #logo{
-  width: 6%;
-  padding-bottom: 4px;
+  /*width: 8%;*/
+  max-width: 100px;
+  padding-bottom: 40px;
+  margin-top: 50px;
  }
 
 
+/* ALL PAGES Header (except Home Page)*/
 
-
- /* Menu Page */
-
- hr{
-  width: 90%;
-  margin-left: 80px; 
- }
-
- 
- #menupg{
-  margin: 0;
+#filpg{
+  margin: 60px;
+  margin-top: 20px;
   padding: 0;
   box-sizing: border-box;
   border: none;
   outline: none;
   font-family: 'Courier New', Courier, monospace;
-  background-image: linear-gradient(to right, #787750, #8a614b);
+  background-color: #f4f8e7;
 }
+
+
+#mySidenavv a {
+  text-decoration: none; /* Remove underline */
+  font-size: 15px; /* Increase font size */
+  color: #733E19; /* Black text color */
+  /*padding: 10px;*/
+  padding: 0.5%;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+#mySidenavv a:hover {
+  text-decoration-line: underline; /* On mouse-over, make the elements appear as they should */
+}
+
+.backg{
+  background-image: url(ecoeats\ leafy\ bg-03.png);
+  background-size: contain;
+}
+
+#logo3{
+  vertical-align: middle;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  width: 4%;
+  margin-left: 15px;
+}
+
+.vl3{
+  border: 2px solid #733E19;
+  /*margin-left: 520px;
+  width: 500px;*/
+  margin-left: 30%;
+  max-width: 40%;
+  height: 100px;
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 3em;
+}
+
+@media screen and (max-width: 720px){
+
+ 
+
+  
+}
+
+
+ /* Menu Page */
 
 .wrapper{
   width: 95%;
@@ -92,18 +159,18 @@
   font-weight: bold;
   width: 40%;
   border: transparent;
-  border-bottom: 2px solid #110f29;
+  border-bottom: 2px solid #733E19;
   padding: 1em 0.3em;
 }
 
 #search-container input:focus {
-  border-bottom-color: red;
+  border-bottom-color: #733E19;
  }
 
 #search-container button{
   padding: 1em 2em;
   margin-left: 1em;
-  background-color: red;
+  background-color: #733E19;
   color: #fff;
   font-weight: bold;
   border-radius: 5px;
@@ -112,18 +179,18 @@
 }
 
 .button-value{
-  border: 2px solid red;
+  border: 2px solid #733E19;
   padding: 1em 2.2em;
   border-radius: 3em;
   background-color: transparent;
-  color: red;
+  color: #733E19;
   font-weight: bold;
   background-color: #fff;
   cursor: pointer;
 }
 
 .active{
-  background-color: red;
+  background-color: #733E19;
   color: #fff;
 }
 
@@ -147,7 +214,7 @@
   text-align: center;
 }
 
-img{
+.tip{
   max-width: 100%;
   object-fit: contain;
   height: 15em;
@@ -167,7 +234,7 @@ img{
 }
 
 @media screen and (max-width: 720px){
-  img{
+  .tip{
     max-width: 100%;
     object-fit: contain;
     height: 10em;

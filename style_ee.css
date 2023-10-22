@@ -59,7 +59,7 @@
   border: 2px solid #733E19;
   /*margin-left: 500px;*/
   margin-left: 30%;
-  height: 100px;
+  height: 50%;
   /*width: 500px;*/
   max-width: 40%;
   margin-top: 10px;
@@ -70,7 +70,8 @@
   font-weight: normal;
   text-align: center;
   font-family: 'Darumadrop One', sans-serif;
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
   /*font-size: 45px;*/
   font-size: 3vw;
   color: #733E19;
@@ -82,6 +83,13 @@
   padding-bottom: 40px;
   margin-top: 50px;
  }
+
+ 
+
+ 
+
+  
+ 
 
  /*About Page*/
  .row {
@@ -172,12 +180,6 @@ p{
   margin-top: 3em;
 }
 
-@media screen and (max-width: 720px){
-
- 
-
-  
-}
 
 
  /* Menu Page */

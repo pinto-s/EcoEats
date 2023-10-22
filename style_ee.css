@@ -109,7 +109,7 @@
     text-align: center;
     font-family: 'Darumadrop One', sans-serif;
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     /*font-size: 45px;*/
     font-size: 8vw;
     color: #733E19;
@@ -240,8 +240,20 @@ p{
     height: 100px;
     text-align: center;
     margin-bottom: 100px;
-    
   }
+  
+  .h2-box1{
+    font-weight: normal;
+    text-align: center;
+    font-family: 'Darumadrop One', sans-serif;
+    margin-top: 15px; /*to make the margins above the text even*/
+    margin-bottom: 10px; /*to make the margins under text even*/
+    /*font-size: 45px;*/
+    font-size: 8vw;
+    color: #733E19;
+   }
+
+  
   
 }
 

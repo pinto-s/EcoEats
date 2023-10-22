@@ -81,6 +81,41 @@
   margin-top: 50px;
  }
 
+ /*About Page*/
+ .row {
+  display: flex;
+  
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  flex-direction: column-reverse;
+  margin-bottom: 100px;
+}
+
+.column2 {
+    flex: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    flex-direction: column-reverse;
+
+}
+
+p{
+  font-weight: bold;
+  font-size: 1.2vw;
+  color: #733E19;
+  margin-left: 10%;
+}
+
+#pic1{
+  width: 80%;
+  margin-left: 10%;
+}
+
 
 /* ALL PAGES Header (except Home Page)*/
 
@@ -222,7 +257,7 @@
 
 .container{
   padding-top: 1em;
-  color: black;
+  color: #733E19;
 }
 
 .container h5{

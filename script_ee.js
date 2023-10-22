@@ -7,55 +7,55 @@ let products = {
         productName: "Basil Pesto Spoons, 4-Pack Cutlery",
         category: "Spoons",
         price: "3",
-        image: "no_image_filler.jpg",
+        image: "bspoon.png",
     },
     {
         productName: "Basil Pesto Forks, 4-Pack Cutlery",
         category: "Forks",
         price: "3",
-        image: "no_image_filler.jpg",  
+        image: "bfork.png",  
     },
     {
         productName: "Cocoa Spoons, 4-Pack Cutlery",
         category: "Spoons",
         price: "3",
-        image: "no_image_filler.jpg",  
+        image: "cspoon.png",  
     },
     {
         productName: "Cocoa Forks, 4-Pack Cutlery",
         category: "Forks",
         price: "3",
-        image: "no_image_filler.jpg",  
+        image: "cfork.png",  
     },
     {
         productName: "Sesame Spoons, 4-Pack Cutlery",
         category: "Spoons",
         price: "3",
-        image: "no_image_filler.jpg",  
+        image: "simmy req-02.jpg",  
     },
     {
         productName: "Sesame Forks, 4-Pack Cutlery",
         category: "Forks",
         price: "3",
-        image: "no_image_filler.jpg",  
+        image: "simmy req-02.jpg",  
     },
     {
         productName: "Cocoa Spoons and Forks, 4-Pack (mixed 2ea) Cutlery",
         category: "Combined",
         price: "3",
-        image: "no_image_filler.jpg",  
+        image: "cocoa.png",  
     },
     {
         productName: "Basil Spoons and Forks, 4-Pack (mixed 2ea) Cutlery",
         category: "Combined",
         price: "3",
-        image: "no_image_filler.jpg",  
+        image: "basil.png",  
     },
     {
         productName: "Sesame Spoons and Forks, 4-Pack (mixed 2ea) Cutlery",
         category: "Combined",
         price: "3",
-        image: "no_image_filler.jpg",  
+        image: "simmy req-02.jpg",  
     }    
 ],
 };
@@ -136,7 +136,25 @@ document.getElementById("search").addEventListener("click", () => {
     let searchInput = document.getElementById("search-input").value;
     let elements =  document.querySelectorAll(".product-name");
     let cards = document.querySelectorAll(".card");
-    console.log(searchInput);  
+
+    if(search="null"){
+        alert('yeeha')
+
+    }else{
+        if(element.innerText.includes(searchInput.toLowerCase())){
+            //display matching card
+            cards[index].classList.remove("hide");
+        }else{
+            //hide other cards
+            cards[index].classList.add("hide");
+        
+            
+        }
+
+    } 
+    
+
+  
 
     //loop through all elements
     elements.forEach((element, index) => {
@@ -147,11 +165,19 @@ document.getElementById("search").addEventListener("click", () => {
         }else{
             //hide other cards
             cards[index].classList.add("hide");
+            
+            
         }
+       
+    
+
+        
         
     })
 
 });
+
+
 
 
 

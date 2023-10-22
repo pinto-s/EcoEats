@@ -18,7 +18,8 @@
 
   #mySidenav a {
     text-decoration: none; /* Remove underline */
-    font-size: 18px; /* Increase font size */
+    /*font-size: 18px; Increase font size */
+    font-size: 1.3vw;
     color: #733E19; /* Brown text color */
     text-align: center;
     padding: 15px;
@@ -70,7 +71,8 @@
   text-align: center;
   font-family: 'Darumadrop One', sans-serif;
   margin-top: 10px;
-  font-size: 45px;
+  /*font-size: 45px;*/
+  font-size: 3vw;
   color: #733E19;
  }
 

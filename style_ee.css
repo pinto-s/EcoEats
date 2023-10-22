@@ -18,8 +18,7 @@
 
   #mySidenav a {
     text-decoration: none; /* Remove underline */
-    /*font-size: 18px; Increase font size */
-    font-size: 1.3vw;
+    font-size: 18px; /* Increase font size */
     color: #733E19; /* Brown text color */
     text-align: center;
     padding: 15px;
@@ -59,7 +58,7 @@
   border: 2px solid #733E19;
   /*margin-left: 500px;*/
   margin-left: 30%;
-  height: 50%;
+  height: 100px;
   /*width: 500px;*/
   max-width: 40%;
   margin-top: 10px;
@@ -70,25 +69,59 @@
   font-weight: normal;
   text-align: center;
   font-family: 'Darumadrop One', sans-serif;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  /*font-size: 45px;*/
-  font-size: 3vw;
+  margin-top: 10px;
+  font-size: 45px;
   color: #733E19;
  }
 
  #logo{
-  width: 6.5%;
-  padding-bottom: 20px;
+  /*width: 8%;*/
+  max-width: 100px;
+  padding-bottom: 40px;
   margin-top: 50px;
  }
 
- 
+ @media screen and (max-width: 720px){
 
- 
+  #mySidenav a {
+    text-decoration: none; /* Remove underline */
+    font-size: 1.3vw; /* Increase font size */
+    color: #733E19; /* Brown text color */
+    text-align: center;
+    padding: 15px;
+    transition: 0.3s;
+    font-weight: bold;
+  }
 
+  .vl{
+    border: 2px solid #733E19;
+    /*margin-left: 500px;*/
+    margin-left: 30%;
+    height: 50%;
+    /*width: 500px;*/
+    max-width: 40%;
+    margin-top: 10px;
+    text-align: center;
+   }
   
- 
+   .h2-box{
+    font-weight: normal;
+    text-align: center;
+    font-family: 'Darumadrop One', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    /*font-size: 45px;*/
+    font-size: 3vw;
+    color: #733E19;
+   }
+  
+   #logo{
+    width: 6.5%;
+    padding-bottom: 20px;
+    margin-top: 50px;
+   }
+
+}
 
  /*About Page*/
  .row {
@@ -179,6 +212,12 @@ p{
   margin-top: 3em;
 }
 
+@media screen and (max-width: 720px){
+
+ 
+
+  
+}
 
 
  /* Menu Page */

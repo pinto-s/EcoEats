@@ -85,21 +85,21 @@
 
   #mySidenav a {
     text-decoration: none; /* Remove underline */
-    font-size: 1.3vw; /* Increase font size */
+    font-size: 2.8vw; /* Increase font size */
     color: #733E19; /* Brown text color */
     text-align: center;
-    padding: 15px;
+    padding: 5px;
     transition: 0.3s;
-    font-weight: bold;
+    font-weight: bolder;
   }
 
   .vl{
     border: 2px solid #733E19;
     /*margin-left: 500px;*/
-    margin-left: 30%;
+    margin-left: 15%;
     height: 50%;
     /*width: 500px;*/
-    max-width: 40%;
+    max-width: 70%;
     margin-top: 10px;
     text-align: center;
    }
@@ -111,15 +111,16 @@
     margin-top: 5px;
     margin-bottom: 10px;
     /*font-size: 45px;*/
-    font-size: 3vw;
+    font-size: 8vw;
     color: #733E19;
    }
   
    #logo{
-    width: 6.5%;
+    width: 15%;
     padding-bottom: 20px;
     margin-top: 50px;
    }
+
 
 }
 

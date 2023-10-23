@@ -38,9 +38,31 @@
                 <input 
                 type="search" 
                 id="search-input"
+                maxlength="15"
                 placeholder="Search cutlery product here..."
                 />
                 <button id="search">Search</button>
+                <p><span id="charCount">0</span> / 15 characters</p>
+
+                <script>
+                  //Boundary testing with the max length of characters that can be entered into the search field
+                  // Get a reference to the input element and character count span
+                  const inputField = document.getElementById("search-input");
+                  const charCountSpan = document.getElementById("charCount");
+              
+                  // Add an input event listener to the input field
+                  inputField.addEventListener("input", function () {
+                    const currentLength = inputField.value.length;
+                    const maxLength = parseInt(inputField.getAttribute("maxlength"));
+                    
+                    charCountSpan.textContent = currentLength + " / " + maxLength + " characters";
+              
+                    if (currentLength > maxLength) {
+                      inputField.value = inputField.value.substring(0, maxLength); // Truncate the input if it exceeds the limit
+                    }
+                  });
+                </script>
+
             </div>
             <div id="buttons">
                 <button class="button-value" onclick="filterProduct('all')">All</button>
@@ -54,10 +76,9 @@
           <br><br>
 
           <div class="footer"> <!--Creating a new div and giving it a class-->
-            <a href="https://www.facebook.com/ecoeats.nz/"><i class="fa-brands fa-square-facebook"></i></a>
-            <a href="https://www.instagram.com/ecoeats.nz"><i class="fa-brands fa-instagram"></i></a>
+            <a onclick="faceFunction()"><i class="fa-brands fa-square-facebook"></i></a>
+            <a onclick="instaFunction()"><i class="fa-brands fa-instagram"></i></a>
             <i class="fa-solid fa-envelope-open"></i>
-            
          </div>
           
         

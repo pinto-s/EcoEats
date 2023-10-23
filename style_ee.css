@@ -64,7 +64,7 @@
   margin-top: 10px;
   text-align: center;
  }
- 
+
  #logo{
   /*width: 8%;*/
   max-width: 100px;
@@ -143,6 +143,7 @@
     flex: 50%;
     padding: 10px;
     height: 300px; /* Should be removed. Only for demonstration */
+    flex-direction: column-reverse;
 }
 
 p{
@@ -351,6 +352,7 @@ p{
   grid-template-columns: auto auto auto auto;
   grid-column-gap: 1.5em;
   padding: 2em 0;
+  font-size: 17px;
 }
 
 .card{
@@ -404,6 +406,10 @@ p{
 
   button{
     margin-top: 2%;
+  }
+
+  p{
+    font-size: 2.9vw;
   }
 
 }

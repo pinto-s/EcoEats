@@ -137,19 +137,18 @@ document.getElementById("search").addEventListener("click", () => {
     let elements =  document.querySelectorAll(".product-name");
     let cards = document.querySelectorAll(".card");
 
-    if(search="null"){
-        alert('yeeha')
+    if(input = "null"){
+        alert('Please enter text!')
 
+    }else{ if(element.innerText.includes(searchInput.toLowerCase())){
+        //display matching card
+        cards[index].classList.remove("hide");
     }else{
-        if(element.innerText.includes(searchInput.toLowerCase())){
-            //display matching card
-            cards[index].classList.remove("hide");
-        }else{
-            //hide other cards
-            cards[index].classList.add("hide");
+        //hide other cards
+        cards[index].classList.add("hide");
+    
         
-            
-        }
+    }
 
     } 
     

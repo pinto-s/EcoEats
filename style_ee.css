@@ -9,7 +9,7 @@
 
 
 
-.back-g{
+.back-g{ /*home page background class*/
   background-repeat: none;
   background-image: url(ecoeats\ leafy\ bg-03.png);
   background-size: contain;
@@ -23,14 +23,14 @@
     text-align: center;
     padding: 15px;
     transition: 0.3s;
-    font-weight: bold;
+    font-weight: bold; /*Make font more visible*/
   }
 
   #mySidenav a:hover {
     text-decoration-line: underline; /* On mouse-over, make the elements appear as they should */
   }
 
-  #ctct-icons{
+  #ctct-icons{ /*social media icons overall look*/
     text-align: right;
     padding: 10px;
     color: white;
@@ -42,7 +42,7 @@
     position: fixed; /* making the footer sticky */
     left: 0; /* making the footer sticky to side of the webpage*/
     bottom: 0; /* making the footer sticky to the botoom of the webpage*/
-    width: 92%; /* making the footer span the whole webpage */
+    width: 92%; /* making the footer span almost the whole webpage */
     margin-left: 4%;
     color: white;
     text-align: right;
@@ -64,6 +64,13 @@
   margin-top: 10px;
   text-align: center;
  }
+ 
+ #logo{
+  /*width: 8%;*/
+  max-width: 100px;
+  padding-bottom: 40px;
+  margin-top: 50px;
+ }
 
  .h2-box{
   font-weight: normal;
@@ -72,13 +79,6 @@
   margin-top: 10px;
   font-size: 45px;
   color: #733E19;
- }
-
- #logo{
-  /*width: 8%;*/
-  max-width: 100px;
-  padding-bottom: 40px;
-  margin-top: 50px;
  }
 
  @media screen and (max-width: 720px){
@@ -143,21 +143,48 @@
     flex: 50%;
     padding: 10px;
     height: 300px; /* Should be removed. Only for demonstration */
-    flex-direction: column-reverse;
-
 }
 
 p{
   font-weight: bold;
-  font-size: 1.2vw;
+  font-size: 20px;
   color: #733E19;
   margin-left: 10%;
 }
 
 #pic1{
-  width: 80%;
-  margin-left: 10%;
+  width: 50%;
+  margin-left: 20%;
 }
+
+@media screen and (max-width: 720px){
+ 
+  .column {
+    flex: 50%;
+    padding: 10px;
+    margin-bottom: 100px;
+    flex-direction: column-reverse;
+  }
+
+  p{
+    font-weight: bold;
+    font-size: 1.2vw;
+    color: #733E19;
+    margin-left: 10%;
+  }
+
+  .column2 {
+    flex: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    flex-direction: column-reverse;
+}
+  
+
+  
+  
+}
+
 
 
 /* ALL PAGES Header (except Home Page)*/
@@ -211,6 +238,16 @@ p{
   margin-bottom: 100px;
   margin-top: 3em;
 }
+
+.h2-box1{
+  font-weight: normal;
+  text-align: center;
+  font-family: 'Darumadrop One', sans-serif;
+  margin-top: 10px;
+  font-size: 45px;
+  color: #733E19;
+ }
+
 
 @media screen and (max-width: 720px){
   #mySidenavv a {
